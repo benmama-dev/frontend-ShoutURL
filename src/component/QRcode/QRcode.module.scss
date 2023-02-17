@@ -1,0 +1,71 @@
+@import '../../style/contants.scss';
+
+.wapper{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .textD{
+            @media (max-width: $sm) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .fullText{
+            @media (max-width: $sm) {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+            }
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 30%;
+            
+
+            .TextEdit[type=text]{
+                width: 100%;
+                outline: none;
+                padding: 12px 25px;
+                font-size: 1.5rem;
+
+                &:focus{
+                    outline: 1px solid $primary;
+                    }
+                
+            }
+
+            .btn{
+                background-color: #4CAF50;
+                color: white;
+                height: 3.5rem;
+                border-radius: 15px;
+                outline: none;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 1.2rem;
+                border: none;
+    
+                &:hover{
+                    background-color: white;
+                    border: 3px solid #4CAF50;
+                    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                    color: black;
+                }
+                
+            }            
+        }
+        .containerQR{
+            margin-top: 5rem;
+            border: 3px solid black;
+            padding: 2rem;
+        }
+
+    }
+}
+
+
+
+
